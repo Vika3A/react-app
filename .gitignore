@@ -59,6 +59,6 @@ typings/
 
 # next.js build output
 .next
-/docs/
-!/docs/index.html
+/public/
+!/public/index.html
 /.idea/

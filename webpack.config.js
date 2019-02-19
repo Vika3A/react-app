@@ -8,7 +8,7 @@ module.exports = {
     entry: './src/index.js',
     mode:NODE_ENV,
     output: {
-        path:     path.resolve(__dirname, 'docs'),
+        path:     path.resolve(__dirname, 'public'),
         filename: '[name].js',
     },
 
@@ -91,7 +91,7 @@ module.exports = {
         })
     ],
     devServer: {
-        contentBase:        path.resolve(__dirname, 'docs'),
+        contentBase:        path.resolve(__dirname, 'public'),
         historyApiFallback: true,
         inline:             true,
         port:               3000,
