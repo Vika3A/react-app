@@ -1,0 +1,50 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgoldenrod;
+  height: 70px;
+  padding: 0 50px;
+}
+
+.logo{
+}
+
+
+
+
+.menu{
+  width: 40%;
+  display: flex;
+
+
+
+  &_item{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-right: 5px;
+
+    &:visited{
+    }
+
+
+
+
+    &:hover,&_active{
+      color: #fff;
+      background-color: #000;
+      border: 1px solid #fff;
+
+    }
+
+    &_active{
+      border-bottom: 2px solid crimson;
+    }
+  }
+}

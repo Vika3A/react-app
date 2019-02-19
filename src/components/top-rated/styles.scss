@@ -1,0 +1,57 @@
+.top_rated{
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.container{
+  margin: 0 auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 20px;
+
+  &_left{
+    width: 60%;
+  }
+
+  &_button{
+    width: 25%;
+    height: 40px;
+    border: 0;
+    color: white;
+    background-color: salmon;
+
+    &:hover{
+      opacity: .75;
+      cursor: pointer;
+    }
+
+    &:first-child{
+      background-color: salmon;
+      margin-right: 10px;
+    }
+    &:last-child{
+      background-color: sandybrown;
+    }
+  }
+
+  &_page{
+    display: flex;
+    align-items: center;
+
+
+    span{
+      font-size: 30px;
+      font-weight: bold;
+      color: sandybrown;
+      margin-right: 5px;
+    }
+  }
+}
