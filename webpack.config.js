@@ -4,6 +4,7 @@ const autoprefixer = require('autoprefixer');
 const NormalModuleReplacementPlugin = require('webpack').NormalModuleReplacementPlugin;
 const {NODE_ENV='production'} = process.env;
 
+
 module.exports = {
     entry: './src/index.js',
     mode:NODE_ENV,

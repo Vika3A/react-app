@@ -1,8 +1,8 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import Styles from './styles.scss';
 import { NavLink } from 'react-router-dom';
 
-class Header extends PureComponent {
+class Header extends Component {
 
     shouldComponentUpdate () {
         return true;

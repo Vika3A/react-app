@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { getTopMovieList } from '../../services/api/movie/top-rated';
-import MoviePreview from './movie-preview/index';
+import { MoviePreview } from './movie-preview/index';
 import Styles from './styles.scss';
 
 export default class TopRated extends Component {
@@ -59,8 +59,14 @@ export default class TopRated extends Component {
         }));
     };
 
+
     render () {
         const { movies, totalPages, currentPage } = this.state;
+
+
+        if (currentPage === 13) {
+            throw new Error('Unlucky :(');
+        }
 
 
         const moviesList = movies.map(
@@ -69,7 +75,8 @@ export default class TopRated extends Component {
 
         const navElement = (<nav className = { Styles.nav }>
             <div className = { Styles.nav_left }>
-                <button className = { Styles.nav_button } onClick = { this._handlePrevPageButtonClick }>  Previous page</button>
+                <button className = { Styles.nav_button } onClick = { this._handlePrevPageButtonClick }> Previous page
+                </button>
                 <button className = { Styles.nav_button } onClick = { this._handleNextPageButtonClick }>Next page</button>
             </div>
 
@@ -77,6 +84,7 @@ export default class TopRated extends Component {
                 <span>{currentPage}</span>/ {totalPages}</div>
                 : ''}
         </nav>);
+
 
         return (
             <section className = { Styles.container }>

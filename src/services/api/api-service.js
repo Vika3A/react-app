@@ -24,8 +24,6 @@ class ApiService {
         {
             const requestUrl = this.addApiKeyToRequest(ApiService.apiUrl + url);
 
-            console.log(requestUrl);
-
             try {
                 return await fetch(requestUrl, {
                     method: 'GET',

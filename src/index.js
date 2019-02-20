@@ -6,4 +6,4 @@ import { App } from './containers/App/index';
 const rootElement = document.getElementById('app');
 
 render(
-    <App />, rootElement);
+    React.createElement(App), rootElement);
