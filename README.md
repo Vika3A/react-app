@@ -33,3 +33,19 @@ npm i -g webpack-cli
 npm i -g eslint
 
 
+
+
+
+
+#### tasks:
+
+
+React.createElement - root react initialisation `src/index.js`
+
+React.Component - App component `src/containers/App/index.js`
+
+React.PureComponent - MoviePreview component `src/components/top-rated/movie-preview/index.js`
+
+functional component - Home component `src/components/home/index.js`
+
+error catcher component - ErrorBoundary component `src/components/error-boundary/index.js`
