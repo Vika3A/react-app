@@ -9,6 +9,10 @@
   margin: 0 auto;
   width: 60%;
   padding: 10px;
+
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+  }
 }
 
 .nav{
@@ -17,8 +21,15 @@
   justify-content: space-between;
   padding-right: 20px;
 
+
+
+
   &_left{
     width: 60%;
+
+    @media only screen and (max-width: 900px) {
+      flex-direction: row;
+    }
   }
 
   &_button{
@@ -27,6 +38,10 @@
     border: 0;
     color: white;
     background-color: salmon;
+
+    @media only screen and (max-width: 900px) {
+      min-width: 120px;
+    }
 
     &:hover{
       opacity: .75;
