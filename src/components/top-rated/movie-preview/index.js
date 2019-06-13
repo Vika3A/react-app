@@ -9,7 +9,7 @@ export class MoviePreview extends PureComponent {
         return (
             <div className = { Styles.item }>
                 <div className = { Styles.item_container }>
-                    <img height = { '92px' } src = { `http://image.tmdb.org/t/p/w92${image}` } width = { '92px' } />
+                    <img height = { '92px' } src = { `https://image.tmdb.org/t/p/w92${image}` } width = { '92px' } />
 
 
                     <div className = { Styles.item_header }>
